@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Enter the Task:</h2>
+    <textarea id="taskInput" rows="3" placeholder="Type Your Task Here....."></textarea>
+
+    <div class="button-group">
+      <button onclick="addTask()">Add Task</button>
+      <button onclick="deleteSelectedTask()">Delete Task</button>
+      <button onclick="deleteAllTasks()">Delete All Tasks</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    
+
+    <button class="exit-btn" onclick="exitApp()">Exit</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
